@@ -33,7 +33,7 @@ This project automates the process of identifying unused Azure resources, includ
 
 ## Usage
 
-### 1. Clone the repository
+### Clone the repository
 First, clone this repository to your local machine:
 
 ```bash
