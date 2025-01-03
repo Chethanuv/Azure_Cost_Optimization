@@ -20,7 +20,7 @@ def unused_vms():
     
     with open('unused_vms.csv', mode='w', newline='') as file:
         writer = csv.writer(file)
-        writer.writerow(['Name','ResourceGroup','Location','State','SKU','OSDiskSize']) #csv headers
+        writer.writerow(['Name','ResourceGroup','Location','State','SKU','OSDiskSizeInGB']) #csv headers
         for vm in vms:
             writer.writerow([vm['Name'],vm['ResourceGroup'],vm['Location'],vm['State'],vm['SKU'],vm['SizeInGB']])
     print("Output saved to unused_vms.csv")
@@ -32,7 +32,7 @@ def unused_disks():
     
     with open('unused_disks.csv', mode='w', newline='') as file:
         writer = csv.writer(file)
-        writer.writerow(['Name','ResourceGroup','Location','SKU','Size']) #csv headers
+        writer.writerow(['Name','ResourceGroup','Location','SKU','SizeInGB']) #csv headers
         for disk in disks:
             writer.writerow([disk['Name'],disk['ResourceGroup'],disk['Location'],disk['SKU'],disk['SizeInGB']])
     print("Output saved to unused_disks.csv")
