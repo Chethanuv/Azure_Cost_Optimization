@@ -33,15 +33,19 @@ This project automates the process of identifying unused Azure resources, includ
 
 ## Usage
 
-### Clone the repository
-First, clone this repository to your local machine:
-
+- For first run:
 ```bash
 git clone git@github.com:Chethanuv/My_Projects.git
-cd My_projects
+cd My_Projects
 az login --use-device-code
+chmod +x check_azure.sh
 bash check_azure.sh
-python3 azure_resources.py (Optional)
+```
+
+- For subsequent runs:
+```bash
+python3 azure_resources.py
+```
 
 
 
