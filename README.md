@@ -8,6 +8,7 @@ This project automates the process of identifying unused Azure resources, includ
 
 1. [Features](#features)
 2. [Requirements](#requirements)
+3. [Usage](#Usage)
 
 ---
 
