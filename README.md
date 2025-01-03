@@ -36,8 +36,8 @@ This project automates the process of identifying unused Azure resources, includ
 
 - For first run:
 ```bash
-git clone git@github.com:Chethanuv/My_Projects.git
-cd My_Projects
+git clone git@github.com:Chethanuv/Azure_Cost_Optimization.git
+cd Azure_Cost_Optimization
 az login --use-device-code
 chmod +x check_azure.sh
 bash check_azure.sh
